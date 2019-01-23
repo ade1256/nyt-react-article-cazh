@@ -1,31 +1,21 @@
-import React, { Component } from 'react';
-import { Nav, Navbar, NavItem, NavDropdown, MenuItem } from 'react-bootstrap';
+import React from 'react';
+import { Nav, Navbar, NavItem } from 'react-bootstrap';
 import '../css/style.css';
 
 const MenuNavbar = () => ( // The variable should be a return function...
   
-  <Navbar inverse collapseOnSelect>
+  <Navbar inverse fluid collapseOnSelect>
     <Navbar.Header>
       <Navbar.Brand>
-        <a href="https://github.com/kecorbin/react-collins-ui">React-Bootstrap</a>
+        <a href="/">NYTBerita</a>
       </Navbar.Brand>
       <Navbar.Toggle />
     </Navbar.Header>
     <Navbar.Collapse>
       <Nav>
-        <NavItem eventKey={1} href="/jobs">Jobs</NavItem>
-        <NavItem eventKey={2} href="/">Users</NavItem>
-        <NavDropdown eventKey={3} title="Dropdown" id="basic-nav-dropdown">
-          <MenuItem eventKey={3.1}>Action</MenuItem>
-          <MenuItem eventKey={3.2}>Another action</MenuItem>
-          <MenuItem eventKey={3.3}>Something else here</MenuItem>
-          <MenuItem divider />
-          <MenuItem eventKey={3.3}>Separated link</MenuItem>
-        </NavDropdown>
-      </Nav>
-      <Nav pullRight>
-        <NavItem eventKey={1} href="#">Link Right</NavItem>
-        <NavItem eventKey={2} href="#">Link Right</NavItem>
+        <NavItem eventKey={1} href="/">Home</NavItem>
+        <NavItem eventKey={2} href="/article">Article</NavItem>
+        <NavItem eventKey={3} href="/books">Books</NavItem>
       </Nav>
     </Navbar.Collapse>
   </Navbar>

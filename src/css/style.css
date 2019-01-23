@@ -5,4 +5,329 @@ body{
     padding:0;
 }
 
-.post-article{}
+a {
+	text-decoration: none;
+	color: #3498db;
+}
+	a:hover {
+		color: #2980b9;
+	}
+
+h2 {
+	line-height: 1.2;
+	margin-bottom: 1.6rem;
+}
+
+.wrapper {
+	max-width: 380px;
+    float: left;
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+.detail-article{
+	width:100%;
+}
+
+/**
+ * Helpers
+ */
+.border-tlr-radius { 
+	border-top-left-radius: 2px;
+	border-top-right-radius: 2px; 
+}
+
+.text-center { text-align: center; }
+
+.radius { border-radius: 2px; }
+
+.padding-tb { padding-top: 1.6rem; padding-bottom: 1.6rem;}
+
+.shadowDepth0 { box-shadow: 0 1px 3px rgba(0,0,0, 0.12); }
+
+.shadowDepth1 {
+   box-shadow: 
+  		0 1px 3px rgba(0,0,0, 0.12),
+    	0 1px 2px rgba(0,0,0, 0.24);      
+}
+
+
+/**
+ * Card Styles
+ */
+
+.card {
+	background-color: #fff;
+	margin-bottom: 1.6rem;
+}
+
+.card__padding {
+	padding: 1.6rem;
+}
+
+.card__image {
+	height: 252px;
+	background-color: #eee;
+}
+	.card__image img {
+		width: 100%;
+		height: 100%;
+		max-width: 100%;
+		display: block;
+	}
+	.detail-article .card__image{
+		height: 600px;;
+	}
+.card__content {
+    position: relative;
+    height: 300px;;
+}
+.detail-article .card__content {
+    position: relative;
+    height: auto;
+}
+/* card meta */
+.card__meta time {
+	font-size: 1.5rem;
+	color: #bbb;
+	margin-left: 0.8rem;
+}
+
+
+
+/* card article */
+.card__article {
+	height: 257px;
+    overflow: hidden;
+}
+.detail-article .card__article {
+	min-height: 300px;
+}
+.card__article a {
+	text-decoration: none;
+	color: #444;
+	transition: all 0.5s ease;
+}
+	.card__article a:hover {
+		color: #2980b9;
+	}
+
+/* card action */
+.card__action {
+	height: 50px;;
+	overflow: hidden;
+	padding-right: 1.6rem;
+	padding-left: 1.6rem;
+	padding-bottom: 1.6rem;
+}
+	 
+.card__author {}
+
+	.card__author img,
+	.card__author-content {
+		display: inline-block;
+		vertical-align: middle;
+	}
+
+	.card__author img{
+		border-radius: 50%;
+		margin-right: 0.6em;
+	}
+
+.card__share {
+	float: right;
+	position: relative;
+	margin-top: -42px;
+}
+
+.card__social {
+	position: absolute;
+	top: 0;
+	right: 0;
+	visibility: hidden;
+	width: 160px;
+	transform: translateZ(0);
+  	transform: translateX(0px);
+  	transition: transform 0.35s ease;
+}
+	.card__social--active {
+		visibility: visible;
+		/*z-index: 3;*/
+		transform: translateZ(0);
+ 		transform: translateX(-48px);
+  		transition: transform 0.35s ease;
+	}
+
+.share-toggle {
+	z-index: 2;
+}
+.share-toggle:before {
+	content: "\f1e0";
+	font-family: 'FontAwesome';
+	color: #3498db;
+}
+	.share-toggle.share-expanded:before {
+		content: "\f00d";
+	}
+
+.share-icon {
+	display: inline-block;
+	width: 48px;
+	height: 48px;
+	line-height: 48px;
+	text-align: center;
+	border-radius: 50%;
+	background-color: #fff;
+	transition: all 0.3s ease;
+	outline: 0;
+
+	box-shadow: 
+	  		0 2px 4px rgba(0,0,0, 0.12),
+	    	0 2px 4px rgba(0,0,0, 0.24);
+}
+	.share-icon:hover,
+	.share-icon:focus {
+		box-shadow: 
+	  		0 3px 6px rgba(0,0,0, 0.12),
+	    	0 3px 6px rgba(0,0,0, 0.24);
+
+	    -webkit-transform: scale(1.2);
+	    -moz-transform: scale(1.2);
+	    -ms-transform: scale(1.2);
+	    -o-transform: scale(1.2);
+	    transform: scale(1.2);
+	}
+
+.facebook {
+	background-color: #3b5998; 
+}
+.twitter {
+	background-color: #00abe3; 
+}
+.googleplus {
+	background-color: #d3492c;
+}
+
+.facebook,
+.twitter,
+.googleplus {
+	color: #fff;
+}
+
+	.facebook:hover,
+	.twitter:hover,
+	.googleplus:hover {
+		color: #eee;
+	}
+
+
+	/* BOOKS */
+	.choose {
+		width: 100%;
+		height: 40px;
+	  }
+	  .fa {
+		margin-right: 20px;
+		font-size: 30px;
+		color: gray;
+		float: right;
+	  }
+	  /******************************************
+	  Book stuff
+	  *******************************************/
+	  
+	  .book {
+		display: inline-block;
+		width: 230px;
+		height: auto;
+		box-shadow: 0 0 20px #aaa;
+		margin: 25px;
+		padding: 10px 10px 0 10px;
+		vertical-align: top;
+		transition: height 1s;
+	  }
+	  /* star button */
+	 
+	  .cover {
+		border: 2px solid gray;
+		height: 300px;
+		overflow: hidden;
+	  }
+	  
+	  .cover img {
+		width: 100%;
+	  }
+	  
+	  .book p {
+		margin-top: 12px;
+		font-size: 20px;
+	  }
+	  
+	  .book .author {
+		font-size: 15px;
+	  }
+	  @media (max-width: 941px) {
+		.container {
+		  max-width: 700px;
+		}
+		.book {
+		  margin: 49px;
+		}
+	  }
+	  @media (max-width: 730px) {
+		.book {
+		  display: block;
+		  margin: 0 auto;
+		  margin-top: 50px;
+		}
+		.cover {
+		  
+		}
+	  }
+	  
+	  /*********************************
+	  other
+	  **********************************/
+	  
+	  h1 {
+		color: gray;
+		text-align: center;
+		font-size: 50px;
+		margin-bottom: -3px;
+	  }
+	  
+	  /**********************************
+	  display change
+	  ***********************************/
+	  /*book height smaller, cover opacity, move text onto cover and star too
+	  animate it */
+	  #list-th:target .book {
+		height: 100px;
+		width: 250px;
+		padding: 10px;
+		margin: 25px auto 25px auto;
+	  }
+	  
+	  #list-th:target .cover {
+		width: 246px;
+	  }
+	  
+	  #list-th:target img {
+		opacity: .1;
+	  }
+	  
+	  #list-th:target p {
+		margin-top: -62px;
+		margin-left: 20px;
+	  }
+	  /* remove button? */
+	  #large-th:target .book {
+		height: 390px;
+	  }
+	  
+	  /***********************************
+	  star animation
+	  ***********************************/
+	  /***********************************
+	  zoom on click
+	  ***********************************/
