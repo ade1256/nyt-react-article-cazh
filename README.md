@@ -11,6 +11,8 @@ Below is a sample view :
 [![demo3.png](https://raw.githubusercontent.com/ade1256/nyt-react-article-cazh/master/demo3.png)](https://raw.githubusercontent.com/ade1256/nyt-react-article-cazh/master/demo3.png)
 [![demo4.png](https://raw.githubusercontent.com/ade1256/nyt-react-article-cazh/master/demo4.png)](https://raw.githubusercontent.com/ade1256/nyt-react-article-cazh/master/demo4.png)
 
+[![demo5.png](https://raw.githubusercontent.com/ade1256/nyt-react-article-cazh/master/demo5.png)](https://raw.githubusercontent.com/ade1256/nyt-react-article-cazh/master/demo5.png)
+
 Just wait for me to upload more more better 😊
 
 
