@@ -20,7 +20,7 @@ class Home extends Component {
           <Route exact path='/' render={
             props =>
             <div>
-              <h1>Berita Terbaru</h1>
+              <h3><center>Berita Terbaru</center></h3>
               <br/>
               <br/>
               <ArticleNews />
